@@ -1,0 +1,90 @@
+filename,technical_score,novelty_score,significance_score,clarity_score,total_score,ground_truth
+"Fall 2021 - Classification of Medical Imagery using DL ()by Alex Loia, Alex Nam - 102543599.pdf",37,11,10,20,78,Outstanding
+"Fall 2021 - Deep Songwriter (Music Generator Using Deep Learning)by Roy Park, Hyun Soo Jeon - 102955409.pdf",28,12,14,19,73,Outstanding
+Fall 2021 - Denoising Diffusion Tensor Imaging (DTI)by Ariel Hannum - 103153908.pdf,38,16,19,20,93,Outstanding
+Fall 2021 - Face Age Prediction with Small Datasetby Brian Jang - 102913899.pdf,27,14,19,20,80,Outstanding
+"Fall 2021 - Gesture Evolution - Understanding the Nonverbal Communication of Creative Design Teamsby Lawrence Domingo, Kyle Tadao Yoshida - 103071419.pdf",34,16,16,19,85,Outstanding
+"Fall 2021 - Identifying presence or absence of seismic facies types in geological images using deep learningby Joe Dalton Stitt, Adam Shugar, Rachael Liu Wang - 102744810.pdf",34,16,19,14,83,Outstanding
+Fall 2021 - Image Exposure Correction with DNNby ZhuoYi Cai - 102730335.pdf,35,19,17,20,91,Outstanding
+"Fall 2021 - In Learning we Truss Structural Design Optimization Using Deep Learningby Vicente Ariztia, Amber Zoe Yang - 102699970.pdf",28,17,19,17,81,Outstanding
+Fall 2021 - Neural networks explanation models to support earthquake mitigation decision-makingby Rodrigo Ivan Silva Lopez - 102891590.pdf,27,16,19,14,76,Outstanding
+Fall 2021 - Overwatch (FPS Game) self-play AI botby Chenyang Dai - 102988723.pdf,28,18,14,18,78,Outstanding
+"Fall 2021 - Predicting Regional US COVID Risk Using Publicly Available Satellite Imagesby Amy Yue Zhang, Sameer Sundrani - 102717926.pdf",36,16,19,18,89,Outstanding
+"Fall 2021 - Sea Otter Detection from Aerial Imaging Databy Salman Mohammed, Carlota Pares Morlans, Margaret Daly - 103120671.pdf",38,17,20,20,95,Outstanding
+"Fall 2021 - Turbulence error correctionby Ryan Hass, Kyle Pietrzyk, Olivia Grace Martin - 102843826.pdf",37,17,18,20,92,Outstanding
+"Fall 2021 - Use Hyperspectral Satellite Images to Predict Carbon Soil Levelsby James Milan Kanoff, Qianli Song, Arjun Jayant Deopujari - 103175852.pdf",28,16,20,20,84,Outstanding
+Winter 2021 - ArXiv paper recommenderby Milind Shyani - 70758899.pdf,37,17,17,20,91,Outstanding
+"Winter 2021 - Challenges in Scalable Distributed Training of Deep Neural Networks under communication constraintsby Akshay Nalla, Kate Pistunova, Rajarshi Saha - 70762032.pdf",25,19,16,17,77,Outstanding
+"Winter 2021 - Context-to-Image CNN Approach to Predict Soybean Yields in Illinois and Rural Areasby Benjamin Liu, Christopher Yu - 70770387.pdf",34,19,20,20,93,Outstanding
+Winter 2021 - Deep Learning for Physics Discoveryby Danyal Mohaddes Khorassani - 70511259.pdf,28,17,20,20,85,Outstanding
+Winter 2021 - Deep Learning to Detect Heavy Drinking Episodes  Using Smartphone Accelerometer Databy Bo Yang - 70769718.pdf,27,19,20,19,85,Outstanding
+Winter 2021 - Generation of Realistic Facemasked Faces With GANsby Samuel Mumford - 70681837.pdf,38,15,18,19,90,Outstanding
+Winter 2021 - Learning To Learn A Dual Network Approach To Multi-Class Active Learningby Sameer Khanna - 70769927.pdf,38,19,18,20,95,Outstanding
+"Winter 2021 - Predicting Ground-Level Ozone Concetration from Urban Satellite and Street Level Imagery using Multimodal CNNby Andrea Vallebueno, Nicolas Suarez, Nina Prakash - 70701113.pdf",35,19,20,20,94,Outstanding
+Winter 2021 - Semi-Supervised Classification of Images for Post-Earthquake Building Damage Assessmentby Aaron Appelle - 70759638.pdf,34,17,20,20,91,Outstanding
+"Winter 2021 - Small Vessel Detection from Synthetic Aperture Radar (SAR) Imagery using Deep Learningby Jake Taylor, Toktam Mohammadnejad - 70512670.pdf",38,15,19,19,91,Outstanding
+Winter 2021 - Time Series based Wikipedia traffic preidction to aid Caching algorithmsby Vaishnav Janardhan - 70759897.pdf,34,18,17,19,88,Outstanding
+"Winter 2021 - Unsupervised Text Generation Using Generative Adversarial Networksby Anastasios Sapalidis, Andrew Freeman, Anna Shors - 70709277.pdf",38,15,14,20,87,Outstanding
+Fall 2021 - A Deep Learning Approach to Predicting the Mechanisms of Action of Drugsby Edward Gao - 102964807.pdf,35,16,19,20,90,Normal
+"Fall 2021 - A Multi-Label Approach to Covid Vaccination Card Classificationby Yingxiao LIU, Xiaojuan Liu - 103159200.pdf",37,16,18,18,89,Normal
+"Fall 2021 - A neural network model for predicting aging trajectory of Li-ion batteriesby Lude Rong, Benson Zu, Jihan Zhuang - 103161780.pdf",38,19,20,20,97,Normal
+"Fall 2021 - A Two-Step, Two-Pronged Approach to Binary Classification of Melanomaby Tom Stephen McIlwain - 103172581.pdf",28,12,19,19,78,Normal
+"Fall 2021 - African Motif Pattern Generation using Generative Adversarial Networkby Nnamdi Michael Jacob, Eliel Akinbami - 103176577.pdf",25,16,17,19,77,Normal
+Fall 2021 - AI-Driven Molecular Dynamics Simulation for Grapheneby Jingchao Zhang - 102968404.pdf,25,12,17,16,70,Normal
+Fall 2021 - Application of Deep Neural Networks to Estimating Flexible Survival Curvesby Zachary Ryan McCaw - 102905634.pdf,37,19,19,16,91,Normal
+"Fall 2021 - Automated identification of lateral plant root emergence pointsby Vivian Zhong, Meiqi Yang - 103111177.pdf",36,17,19,18,90,Normal
+"Fall 2021 - Brain Maximum Principal Strain (MPS) Evaluation in Head Impactby Mabel Jiang, Shunyao Xu, Mingruo Shen - 103173488.pdf",28,14,19,20,81,Normal
+"Fall 2021 - Building a Deep Reinforcement Learning Model to Improve Our Understanding of Gambling Utility Maximizationby Ziang Liu, Gabriel Spil - 103066753.pdf",35,16,13,19,83,Normal
+"Fall 2021 - Characterizing Use of Solar Panels in Germany From Satellite Imageryby Selena Sun, Xinqi Wang, Anh Hoang Nguyen - 103169540.pdf",27,17,20,19,83,Normal
+Fall 2021 - Chronological determination of artworkby Richie Wang - 102926002.pdf,28,14,10,15,67,Normal
+Fall 2021 - Classifying YouTube Videos - 103085886.pdf,28,16,14,19,77,Normal
+"Fall 2021 - Cloud Removal of Satellite Imagery via Conditional Pixel Synthesisby Yuxiao Chen, Qinxi Meng - 102982540.pdf",35,15,19,18,87,Normal
+"Fall 2021 - COVID-19 detection based on CT imagesby Shiyu Li, Chungfu Chang, Chunjiang Mou - 103153701.pdf",25,16,17,18,76,Normal
+"Fall 2021 - Deep Learning for Fluid Dynamicsby Matthew Bonanni, Ali Lasemi, Brett Bornhoft - 102652493.pdf",35,17,20,15,87,Normal
+Fall 2021 - Deep Modeling of Corporate Credit Riskby Khalid Abbas El-Awady - 102763801.pdf,38,17,19,20,94,Normal
+Fall 2021 - Deep Q-Learning for Option Pricingby Frederic Ladouceur - 102736302.pdf,35,12,18,15,80,Normal
+"Fall 2021 - Don't believe What You Seeby Barry Cheung, Isaiah Williams - 103177623.pdf",37,16,16,19,88,Normal
+Fall 2021 - Exploration of User Privacy Preservation via CTGAN Data Synthesis for Deep Recommendersby Savannah McCoy - 103173308.pdf,25,12,15,19,71,Normal
+Fall 2021 - Facial Expression Recognition in the Masked COVID-19 Timesby Juan Carlos Meave Ojeda - 103170382.pdf,28,15,14,18,75,Normal
+"Fall 2021 - Generating Realistic Emotional Pictures with Matched Visual and Emotional Attributesby Insub Kim, Jinxiao Zhang - 103113520.pdf",36,20,19,19,94,Normal
+"Fall 2021 - Generative Modeling of Lightning Patterns from Climatological Databy Yuzu Marie-Christine Ido, Henri Solomon Stern - 103168720.pdf",32,16,20,20,88,Normal
+Fall 2021 - Gesture Detection in Videos - 103147570.pdf,38,15,20,20,93,Normal
+"Fall 2021 - High Topology SEMI wafers - Height Variation Map Prediction using DLby Muthukumar Kalyanaraman, Krishnachandiran Ravichandiran - 103173353.pdf",22,16,15,16,69,Normal
+"Fall 2021 - Human Protein Atlas Image Classificationby Elizabeth Anne Fitzgerald, Constantine J Athanitis - 102495996.pdf",34,17,20,20,91,Normal
+"Fall 2021 - Identifying ALS patients from speechby Nik Alexander Caryotakis, Eric Xu, Cortney Curtis Weintz - 103171983.pdf",27,16,19,20,82,Normal
+"Fall 2021 - Identifying Misconduct in Financeby Seyeon Kim, Youngchul Joo - 103152810.pdf",28,17,19,19,83,Normal
+"Fall 2021 - Image As Thermometer Temperature Prediction using Sequential Imagesby Zilu Wang, Yuwei Wu, Hanxiao Zhao - 102672937.pdf",37,18,14,19,88,Normal
+Fall 2021 - Classifying multi-contact sliding vs tipping from large area tactile sensor databy Dane Brouwer - 103084032.pdf,35,15,14,13,77,Normal
+Fall 2021 - Improving Models for Various SustainBench Tasksby James Zheng - 103169985.pdf,25,13,19,17,74,Normal
+Fall 2021 - Improving Sim-to-Real Transfer on an Inexpensive Quadruped Robotby Gabrael Levine - 103176472.pdf,25,17,16,19,77,Normal
+"Fall 2021 - Increasing the electricity consumption usage ...by Vasu G Patel, Benjamin Koranteng Amoh - 103165112.pdf",27,16,19,19,81,Normal
+Fall 2021 - Long-Term Stock Prediction using Quantitative and Text-Based Databy Dylan Marshall Crain - 103153267.pdf,23,17,17,19,76,Normal
+Fall 2021 - Lymphoma Diagnosis For Treatment Decisionsby Vrishab Krishna - 103155257.pdf,28,15,20,20,83,Normal
+"Fall 2021 - Mesh Generating 3D Renderings from 2D Imagesby Tony Sun, Sanjana Sarda - 103136976.pdf",38,15,16,20,89,Normal
+Fall 2021 - Movie Genre Classification using Text and Image Databy David Allen LeBaron - 102983714.pdf,34,15,15,19,83,Normal
+Fall 2021 - Multispeaker Speech Synthesis with Configurable Emotionsby Jiaxiang FU - 103164333.pdf,38,18,16,20,92,Normal
+Fall 2021 - Noise reduction for LSTM using Wavelet Transform and Singular Spectrum Analysisby Matthew Thomas - 102851552.pdf,24,14,18,19,75,Normal
+Fall 2021 - Object Pose Estimationby Umesh Thillaivasan - 103058918.pdf,28,15,17,20,80,Normal
+"Fall 2021 - Photo Filter Estimationby Alex Tae Lee, Leon Bi, Michael Juneho Chang - 103170901.pdf",34,15,14,19,82,Normal
+"Fall 2021 - Predicting California Wildfire Risk with Deep Neural Networksby Ian MacFarlane, Majo Lozano - 103174984.pdf",28,17,19,19,83,Normal
+"Fall 2021 - Predicting ground-state molecular properties using the quantum-mechanical dataset QM7-Xby Austin Atsango, Fathelrahman Ahmed Elmisbah Ali, Sanjari Srivastava - 103153329.pdf",36,15,17,20,88,Normal
+"Fall 2021 - Predicting Housing Markets Using Deep Learningby Ryan B Cao, Sam Alan Spinner, Kiara Nirghin - 103174196.pdf",27,14,20,19,80,Normal
+"Fall 2021 - Predicting inflation with satellite imagery of store parking lotsby Andrew Hugh Conkey, Atindra Jha, Kyle Nguyen - 103171981.pdf",28,16,19,20,83,Normal
+Fall 2021 - Predicting True Regional Income via Satellite Images of Lights at Nightby Leo Goldman - 103144717.pdf,32,17,20,20,89,Normal
+"Fall 2021 - Prediction of Coronary Artery Disease Via Calcium Scoring of Chest CTsby Sahar Kazemzadeh, Samvel Gyurdzhyan, Manish Kumar Singh, Besher Ashouri - 103167584.pdf",38,16,20,20,94,Normal
+"Fall 2021 - Prediction of the Estimated Time of Arrival of an airborne aircraft using Deep Learningby Guillermo Frontera Sanchez, Marta Toledano - 103006639.pdf",35,17,19,16,87,Normal
+"Fall 2021 - Reinforcement learning to optimize simple 2D fighting gamesby Anthony C Xie, Kantapong Kotchum, Jake Lee - 103170118.pdf",27,17,10,18,72,Normal
+"Fall 2021 - ReL Catanby Chris Chankyo Kim, Aaron Y. Li - 103176936.pdf",26,16,10,16,68,Normal
+"Fall 2021 - Self-supervised regularization on Quora question similarityby Lynette Gao, Yujing Zhang - 102673633.pdf",38,16,15,19,88,Normal
+"Fall 2021 - Semantic ImageSegmentation for Deep Learning Applications forAutonomous Satellite Rendezvousby William Scot Armstrong, Nicholas Lui, Spencer Drakontaidi - 102742994.pdf",27,16,20,17,80,Normal
+Fall 2021 - Sentiment Classifier Behind Wordsby Jiwen Chen - 102679174.pdf,32,8,13,20,73,Normal
+"Fall 2021 - Snake Game AI Agentby Thomas Wentao Jiang, Claire Mei Jun Mai - 103085287.pdf",26,13,7,19,65,Normal
+"Fall 2021 - Stock price prediction with sentimentby Eziz Durdyev, Daniella Grimberg, Kevin Hu - 103158402.pdf",27,16,15,16,74,Normal
+Fall 2021 - Sustainable Development Goals Creating an Active Learning Benchmarkby Rob Harries - 103123788.pdf,27,18,15,17,77,Normal
+"Fall 2021 - Text-Based Sales Prediction with Deep Learning Approachesby Haishan Gao, Zhaoqiang Bai, Jingqian Li - 103165343.pdf",28,14,16,20,78,Normal
+"Fall 2021 - Timbre Transformation using Deep Learningby Yamaan Mohammed Atiq, Kathlynn Marie Simotas - 103174563.pdf",27,14,14,19,74,Normal
+"Fall 2021 - TINGMAN Biomimetic Deep Reinforcement Learning Architecture for NetHack Agentby Eduardo Alanis Esteban, Ayush Pandit - 104478428.pdf",35,17,11,19,82,Normal
+Fall 2021 - Translating classic Russian Literature into English using NLPby Alice Dai - 103051256.pdf,22,12,11,19,64,Normal
+Fall 2021 - Trash Harvesterby Goutham Krishna Teja Muppala - 103171653.pdf,28,15,18,19,80,Normal
+Fall 2021 - Visual recognition of electronic partsby Boyeon Kim - 103160730.pdf,27,16,15,16,74,Normal
+Fall 2021 - Weightlisting video analysisby Stephone Maurice Christian - 103127252.pdf,26,16,18,16,76,Normal
