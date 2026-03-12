@@ -6,7 +6,7 @@ from google import genai
 from google.genai import types
 from pydantic import BaseModel, Field
 
-GEMINI_API_KEY = "AIzaSyCqrDfPpsiGb_6sRdDqULUKHLsXlA5aYVw"
+GEMINI_API_KEY = "<API-KEY>"
 
 prompt = """
 You are an expert ML research evaluator. Your task is to read a student's machine learning project report and assign a precise numerical score across four dimensions. 
