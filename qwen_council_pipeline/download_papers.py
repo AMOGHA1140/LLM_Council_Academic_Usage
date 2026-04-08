@@ -45,17 +45,34 @@ ACCEPTED_PAPERS = [
     ("rcQdycl0zyk", "Beyond Fully-Connected Layers with Quaternions: Parameterization of Hypercomplex Multiplications with 1/n Parameters"),
     ("Mos9F9kDwkz", "Complex Query Answering with Neural Link Predictors"),
     ("NzTU59SYbNq",  "EigenGame: PCA as a Nash Equilibrium"),
+    ("rsf1z-JSj87", "End-to-end Adversarial Text-to-Speech "),
+    ("uCY5MuAxcxU", "Why Are Convolutional Nets More Sample-Efficient than Fully-Connected Nets?"),
+    ("Pd_oMxH8IlF", "Iterated learning for emergent systematicity in VQA"),
+    ("m5Qsh0kBQG", "Deep symbolic regression: Recovering mathematical expressions from data via risk-seeking policy gradients"),
+    ("xppLmXCbOw1", "Self-supervised Visual Reinforcement Learning with Object-centric Representations"),
+    ("PUkhWz65dy5", "Discovering a set of policies for the worst case reward"),
+    ("LmUJqB1Cz8", "Winning the L2RPN Challenge: Power Grid Management via Semi-Markov Afterstate Actor-Critic"),
+    ("3UDSdyIcBDA", "RMSprop converges with proper hyper-parameter"),
+    ("ZPa2SyGcbwh", "Learning with Feature-Dependent Label Noise: A Progressive Approach"),
+    ("opHLcXxYTC_", "Influence Estimation for Generative Adversarial Networks"),
 ]
 
 REJECTED_PAPERS = [
-    # From user screenshot and OpenReview browsing
     ("kB8DkEKSDH", "Hellinger Distance Constrained Regression"),
-    # ── ADD MORE REJECTED PAPER IDS BELOW ──
-    # Browse: https://openreview.net/group?id=ICLR.cc/2021/Conference#withdrawn-rejected-submissions
     ("-aThAo4b1zn", "A Theory of Self-Supervised Framework for Few-Shot Learning"),
     ("j0uePNuoBho", "Learned Threshold Pruning"),
     ("N5Zacze7uru", "Neural Lyapunov Model Predictive Control"),
     ("trPMYEn1FCX", "GENERATIVE MODEL-ENHANCED HUMAN MOTION PREDICTION"),
+    ("oev4KdikGjy", "FMix: Enhancing Mixed Sample Data Augmentation"),
+    ("xfOVXyO_cwJ", "Empirical Frequentist Coverage of Deep Learning Uncertainty Quantification Procedures"),
+    ("UiLl8yjh57", "Deep Reinforcement Learning For Wireless Scheduling with Multiclass Services"),
+    ("hbzCPZEIUU", "Connecting Sphere Manifolds Hierarchically for Regularization"),
+    ("F8xpAPm_ZKS", "Model-Free Counterfactual Credit Assignment"),
+    ("ijVgDcvLmZ", "FSV: Learning to Factorize Soft Value Function for Cooperative Multi-Agent Reinforcement Learning"),
+    ("aJLjjpi0Vty", "Collaborative Filtering with Smooth Reconstruction of the Preference Function"),
+    ("MhTgnultR1K", "A Real-time Contribution Measurement Method for Participants in Federated Learning"),
+    ("C4-QQ1EHNcI", "Expressive yet Tractable Bayesian Deep Learning via Subnetwork Inference"),
+    ("LvJ8hLSusrv", "Gradient-based tuning of Hamiltonian Monte Carlo hyperparameters")
 ]
 
 # ═══════════════════════════════════════════════════════════════════════════════

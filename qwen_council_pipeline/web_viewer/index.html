@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Council Explorer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Marked.js for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-header">
+                <h2>⚔️ Debate Council</h2>
+                <div class="stats" id="global-stats">
+                    <!-- Global stats inserted here by JS -->
+                    Loading...
+                </div>
+                <div class="file-selector">
+                    <label for="dataset-select">Data Source:</label>
+                    <select id="dataset-select">
+                        <option value="../sample_debate.jsonl">sample_debate.jsonl</option>
+                        <option value="../results_debate.jsonl">results_debate.jsonl</option>
+                        <option value="../debate_output_moe_qwen_gemma.jsonl">debate_output_moe_qwen_gemma.jsonl
+                        <option value="../new_debate_output_moe_qwen_gemma.jsonl">new_debate_output_moe_qwen_gemma.jsonl
+                        <option value="../new_debate_output_moe_qwen_gemma_rounds=3.jsonl">
+                            rounds=3_new_debate_output_moe_qwen_gemma.jsonl
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="sidebar-paper-list" id="paper-list">
+                <!-- Paper list injected here -->
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main id="main-content">
+            <div id="welcome-state" class="empty-state">
+                <div class="empty-icon">📝</div>
+                <h2>Select a paper from the sidebar</h2>
+                <p>Explore the adversarial review process, cross-examination rounds, and area chair verdicts.</p>
+            </div>
+
+            <div id="debate-view" class="hidden">
+                <!-- Header -->
+                <header class="glass-panel" id="paper-header">
+                    <!-- Title, Metadata, Summary injected here -->
+                </header>
+
+                <!-- Personas -->
+                <section class="section-container">
+                    <h3 class="section-title">🎭 Adversarial Personas</h3>
+                    <div class="grid-2" id="personas-grid">
+                        <!-- Personas injected here -->
+                    </div>
+                </section>
+
+                <!-- Initial Analyses -->
+                <section class="section-container">
+                    <h3 class="section-title">📋 Phase 2 — Initial Independent Analyses</h3>
+                    <div class="grid-2" id="initial-analysis-grid">
+                        <!-- Initial extractions injected here -->
+                    </div>
+                </section>
+
+                <!-- Debate Rounds -->
+                <section class="section-container">
+                    <h3 class="section-title">🥊 Phase 3 — Cross-Examination Rounds</h3>
+                    <div id="debate-rounds">
+                        <!-- Rounds injected here -->
+                    </div>
+                </section>
+
+                <!-- Area Chair Verdict -->
+                <section class="section-container">
+                    <h3 class="section-title">⚖️ Phase 4 — Area Chair Verdict</h3>
+                    <div class="glass-panel chair-panel" id="verdict-panel">
+                        <!-- Verdict injected here -->
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
