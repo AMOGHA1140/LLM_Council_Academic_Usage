@@ -29,7 +29,7 @@ from openai import AsyncOpenAI
 
 # ─── Model constants ──────────────────────────────────────────────────────────
 PROFILER_MODEL = "gemma4:26b"
-REVIEWER_MODELS = ["gemma4:26b", "qwen3.5:27b", "gemma4:26b"]
+REVIEWER_MODELS = ["gemma4:26b", "qwen3.5:35b", "qwen3.5:35b"]
 
 # ─── Ollama client ────────────────────────────────────────────────────────────
 client = AsyncOpenAI(

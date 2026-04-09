@@ -31,12 +31,13 @@ import os
 import asyncio
 import argparse
 import textwrap
+import re
 from pathlib import Path
 from openai import AsyncOpenAI
 
 # ─── Model constants ──────────────────────────────────────────────────────────
 PROPONENT_MODEL = "gemma4:26b"
-CRITIC_MODEL    = "qwen3.5:27b"
+CRITIC_MODEL    = "qwen3.5:35b"
 CHAIR_MODEL     = "gemma4:26b"
 
 # ─── Ollama client ────────────────────────────────────────────────────────────
@@ -178,7 +179,7 @@ Each element must have at minimum:
                ending with a one-word tag: [VALID], [WEAK], or [INVALID]
 
 You may add any additional fields you find useful (e.g. "concern", "strength", "citation_gap").
-Aim for 4–7 elements covering the paper's most consequential claims.
+Aim for 4-7 elements covering the paper's most consequential claims.
 Do NOT pad with trivial observations.
 
 Output only the JSON array. No prose before or after.
@@ -191,7 +192,7 @@ async def extract_analysis(persona_name: str, mandate: str,
     sys_msg = EXTRACTION_SYSTEM.format(name=persona_name, mandate=mandate)
     user_msg = (
         f"Analyse this paper thoroughly.\n\n"
-        f"Paper:\n{paper_text[:55000]}"
+        f"Paper:\n{paper_text}"
     )
 
     print(f"  │  ├─ [{role_label}] {persona_name} reading paper ({model})...", flush=True)
@@ -279,7 +280,7 @@ async def debate_round(
     structured = None
     try:
         clean = raw.replace("```json","").replace("```","")
-        start = clean.rindex("{")   # last { to skip any prose-embedded ones
+        start = clean.index("{")    # first { = outermost JSON object
         end   = clean.rindex("}") + 1
         structured = json.loads(clean[start:end])
     except Exception:
@@ -368,7 +369,8 @@ async def run_debate(
 CHAIR_SYSTEM = (
     "You are the Area Chair for ICML, the world's premier machine learning conference. "
     "You have just presided over a structured adversarial peer-review debate. "
-    "Your role is to act as the ultimate arbiter: cool-headed, evidence-driven, and decisive."
+    "Your role is to act as the ultimate arbiter: cool-headed, evidence-driven, and decisive. "
+    "The baseline assumption for any submission is rejection. Only papers in the top 20% of quality are accepted."
 )
 
 async def area_chair_resolution(
@@ -411,11 +413,13 @@ async def area_chair_resolution(
         "could not adequately refute.\n\n"
         "5. META-REVIEW: Write a concise 3-5 sentence meta-review as if sending it to the "
         "authors.\n\n"
-        "6. FINAL DECISION: Based strictly on the logical arguments that survived "
-        "cross-examination — not numeric scores — end your response with exactly:\n"
-        "   DECISION: Accept\n"
-        "   or\n"
-        "   DECISION: Reject"
+        "6. FINAL DECISION: The default decision for this conference is Reject. You must only "
+        "output DECISION: Accept if the Proponent thoroughly dismantled every single methodological "
+        "flaw raised by the Critic. If any of the Critic's substantial concerns remain unresolved, "
+        "or were only partially addressed by the Proponent, you must output exactly:\n"
+        "   DECISION: Reject\n"
+        "Otherwise, if the Critic is entirely defeated, output exactly:\n"
+        "   DECISION: Accept"
     )
 
     print(f"  └─ Area Chair deliberating...", flush=True)
@@ -530,7 +534,13 @@ def load_dataset(path: str = "dataset.jsonl") -> list[dict]:
     with open(path) as f:
         for line in f:
             entry = json.loads(line.strip())
-            if entry.get("markdown_path") and Path(entry["markdown_path"]).exists():
+            pid = entry.get("paper_id")
+            # Automatically find the markdown file even if it's not marked in the dataset json
+            expected_md = Path(f"papers_markdown/{pid}/{pid}.md")
+            if expected_md.exists():
+                entry["markdown_path"] = str(expected_md)
+                entries.append(entry)
+            elif entry.get("markdown_path") and Path(entry["markdown_path"]).exists():
                 entries.append(entry)
     return entries
 
@@ -606,7 +616,9 @@ async def main():
         print(f"{'▓'*72}")
 
         md_path    = Path(entry["markdown_path"])
-        paper_text = md_path.read_text(encoding="utf-8")
+        raw_text   = md_path.read_text(encoding="utf-8")
+        # Strip markdown images to save tokens since models only need the text
+        paper_text = re.sub(r'!\[.*?\]\(.*?\)', '', raw_text)
 
         try:
             council_output = await run_debate_council(paper_text, max_rounds)
