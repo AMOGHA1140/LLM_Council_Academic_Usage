@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubric Council Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-header">
+                <h2>Rubric Council</h2>
+                <div class="stats" id="global-stats">Loading...</div>
+                <div class="file-selector">
+                    <label for="dataset-select">Data Source:</label>
+                    <select id="dataset-select">
+                        <option value="../rubric_results1.jsonl">rubric_results1.jsonl</option>
+                    </select>
+                </div>
+                <div class="threshold-control">
+                    <label for="threshold-input">Threshold:</label>
+                    <input type="number" id="threshold-input" value="5.5" step="0.1" min="1" max="10">
+                    <button id="threshold-apply">Apply</button>
+                </div>
+            </div>
+
+            <div class="sidebar-paper-list" id="paper-list"></div>
+        </aside>
+
+        <!-- Main Content -->
+        <main id="main-content">
+            <div id="welcome-state" class="empty-state">
+                <div class="empty-icon">📊</div>
+                <h2>Select a paper from the sidebar</h2>
+                <p>Explore rubric scores, reviewer personas, discussion revisions, and aggregated decisions.</p>
+            </div>
+
+            <div id="rubric-view" class="hidden">
+                <!-- Header -->
+                <header class="glass-panel" id="paper-header"></header>
+
+                <!-- Score Overview -->
+                <section class="section-container">
+                    <h3 class="section-title">Score Overview</h3>
+                    <div id="score-overview"></div>
+                </section>
+
+                <!-- Personas -->
+                <section class="section-container">
+                    <h3 class="section-title">Reviewer Personas</h3>
+                    <div class="grid-3" id="personas-grid"></div>
+                </section>
+
+                <!-- Initial Reviews -->
+                <section class="section-container">
+                    <h3 class="section-title">Phase 2 — Independent Rubric Reviews</h3>
+                    <div class="grid-3" id="reviews-grid"></div>
+                </section>
+
+                <!-- Discussion -->
+                <section class="section-container">
+                    <h3 class="section-title">Phase 3 — Score-Revision Discussion</h3>
+                    <div class="grid-3" id="discussion-grid"></div>
+                </section>
+
+                <!-- Aggregation -->
+                <section class="section-container">
+                    <h3 class="section-title">Phase 5 — Aggregation &amp; Decision</h3>
+                    <div class="glass-panel decision-panel" id="aggregation-panel"></div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
