@@ -119,6 +119,12 @@ function renderHeader(p) {
     const gt = (p.label || '?').toUpperCase();
     const pred = p._pred.toUpperCase();
 
+    const timeBlock = p.elapsed_seconds != null ? `
+            <div class="verdict-item">
+                <span class="verdict-label">Eval Time</span>
+                <span class="verdict-value" style="color:var(--accent-muted, #a78bfa)" title="${p.elapsed_seconds}s total">${fmtTime(p.elapsed_seconds)}</span>
+            </div>` : '';
+
     header.innerHTML = `
         <h2>${esc(p.title || "Untitled")}</h2>
         <div class="header-meta">
@@ -142,6 +148,7 @@ function renderHeader(p) {
                 <span class="verdict-label">Avg Overall</span>
                 <span class="verdict-value" style="color:white">${(p.aggregation?.avg_overall ?? 0).toFixed(2)}</span>
             </div>
+            ${timeBlock}
         </div>
 
         <div class="model-list">
@@ -281,6 +288,12 @@ function renderAggregation(p) {
     const vetoContrib = (agg.avg_contribution ?? 0) < 2.0;
     const hasVeto = vetoSound || vetoContrib;
 
+    const timeMetric = p.elapsed_seconds != null ? `
+        <div class="agg-metric">
+            <div class="agg-label">Eval Time</div>
+            <div class="agg-value" style="color:var(--accent-muted, #a78bfa)" title="${p.elapsed_seconds}s total">${fmtTime(p.elapsed_seconds)}</div>
+        </div>` : '';
+
     panel.innerHTML = `
         <div class="agg-grid">
             <div class="agg-metric">
@@ -307,6 +320,7 @@ function renderAggregation(p) {
                 <div class="agg-label">Clarity Avg</div>
                 <div class="agg-value">${(agg.avg_clarity ?? 0).toFixed(2)}</div>
             </div>
+            ${timeMetric}
         </div>
         <div class="weights-row">
             Confidence weights: ${weights.map((w, i) => `R${i+1}=${w}`).join(', ')}
@@ -324,4 +338,11 @@ function esc(unsafe) {
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
+}
+
+function fmtTime(secs) {
+    if (secs == null) return null;
+    const m = Math.floor(secs / 60);
+    const s = Math.round(secs % 60);
+    return m > 0 ? `${m}m ${s}s` : `${s}s`;
 }

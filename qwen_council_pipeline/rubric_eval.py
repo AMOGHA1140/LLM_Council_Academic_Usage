@@ -21,6 +21,7 @@ Usage:
 import json
 import os
 import re
+import time
 import asyncio
 import argparse
 import textwrap
@@ -599,20 +600,26 @@ async def main():
         md_path = Path(entry["markdown_path"])
         paper_text = md_path.read_text(encoding="utf-8")
 
+        paper_start_time = time.monotonic()
         try:
             council_output = await run_rubric_council(paper_text, args.threshold)
+            elapsed = time.monotonic() - paper_start_time
             prediction = council_output["aggregation"].get("decision")
             match = "✓" if prediction and prediction.upper() == gt.upper() else "✗"
             if match == "✓":
                 correct += 1
 
+            mins, secs = divmod(int(elapsed), 60)
+            elapsed_str = f"{mins}m {secs}s" if mins else f"{secs}s"
             print(f"\n  {'━'*68}")
             print(f"  RESULT │ Prediction: {prediction or 'NONE'} │ Ground Truth: {gt} │ {match}")
             print(f"         │ Avg Overall: {council_output['aggregation'].get('avg_overall', '?')}")
+            print(f"         │ Elapsed:     {elapsed_str} ({elapsed:.1f}s)")
             print(f"  {'━'*68}\n")
 
         except Exception as e:
             import traceback
+            elapsed = time.monotonic() - paper_start_time
             print(f"\n  ✗ ERROR processing {paper_id}:")
             traceback.print_exc()
             council_output = {"error": str(e)}
@@ -626,6 +633,7 @@ async def main():
             "threshold": args.threshold,
             "prediction": prediction,
             "correct": match == "✓",
+            "elapsed_seconds": round(elapsed, 2),
             **council_output,
         }
         results.append(result)
