@@ -55,6 +55,16 @@ ACCEPTED_PAPERS = [
     ("3UDSdyIcBDA", "RMSprop converges with proper hyper-parameter"),
     ("ZPa2SyGcbwh", "Learning with Feature-Dependent Label Noise: A Progressive Approach"),
     ("opHLcXxYTC_", "Influence Estimation for Generative Adversarial Networks"),
+    ("Pbj8H_jEHYv", "Orthogonalizing Convolutional Layers with the Cayley Transform"),
+    ("lVgB2FUbzuQ", "Predicting Infectiousness for Proactive Contact Tracing"),
+    ("04LZCAxMSco", "Learning a Latent Simplex in Input Sparsity Time"),
+    ("w_7JMpGZRh0", "Watch-And-Help: A Challenge for Social Perception and Human-AI Collaboration"),
+    ("QYjO70ACDK", "Distributional Sliced-Wasserstein and Applications to Generative Modeling"),
+    ("tW4QEInpni", "When Do Curricula Work?"),
+    ("rJA5Pz7lHKb", "Improved Autoregressive Modeling with Distribution Smoothing"),
+    ("PxTIG12RRHS", "Score-Based Generative Modeling through Stochastic Differential Equations"),
+    ("PKubaeJkw3", "Rethinking Architecture Selection in Differentiable NAS"),
+    ("Ysuv-WOFeKR", "Parrot: Data-Driven Behavioral Priors for Reinforcement Learning")
 ]
 
 REJECTED_PAPERS = [
@@ -72,7 +82,22 @@ REJECTED_PAPERS = [
     ("aJLjjpi0Vty", "Collaborative Filtering with Smooth Reconstruction of the Preference Function"),
     ("MhTgnultR1K", "A Real-time Contribution Measurement Method for Participants in Federated Learning"),
     ("C4-QQ1EHNcI", "Expressive yet Tractable Bayesian Deep Learning via Subnetwork Inference"),
-    ("LvJ8hLSusrv", "Gradient-based tuning of Hamiltonian Monte Carlo hyperparameters")
+    ("LvJ8hLSusrv", "Gradient-based tuning of Hamiltonian Monte Carlo hyperparameters"),
+    ("WPO0vDYLXem", "Hyperparameter Transfer Across Developer Adjustments"), #imp
+    ("4HGL3H9eL9U", "AT-GAN: An Adversarial Generative Model for Non-constrained Adversarial Examples"),
+    ("nLYMajjctMh", "Federated Learning of a Mixture of Global and Local Models"),
+    ("K4wkUp5xNK", "Invariant Causal Representation Learning"),
+    ("cbdp6RLk2r7", "Addressing the Topological Defects of DisentanglementDownload PDF"),
+    ("PmUGXmOY1wK", "GL-Disen: Global-Local disentanglement for unsupervised learning of graph-level representations"),
+    ("BW5PuV4V-rL", "Gradient-based training of Gaussian Mixture Models for High-Dimensional Streaming Data"),
+    ("ysXk8cCHcQN", "Fast 3D Acoustic Scattering via Discrete Laplacian Based Implicit Function EncodersDownload PDF"),
+    ("o7YTArVXdEW", "AC-VAE: Learning Semantic Representation with VAE for Adaptive Clustering"),
+    ("Q5ZxoD2LqcI", "On the use of linguistic similarities to improve Neural Machine Translation for African Languages"), #Note that this is more on NLP than CV
+    ("SP5RHi-rdlJ", "Sparse Binary Neural Networks"), #worth noting - zero novelity
+    ("QHUUrieaqai", "LIME: Learning Inductive Bias for Primitives of Mathematical Reasoning"),
+    ("Ew0zR07CYRd", "Bounded Myopic Adversaries for Deep Reinforcement Learning Agents"),
+    ("J5LS3YJH7Zi", "CaLFADS: latent factor analysis of dynamical systems in calcium imaging dataDownload PDF"),
+    ("Rld-9OxQ6HU", "MC-LSTM: Mass-conserving LSTM"),
 ]
 
 # ═══════════════════════════════════════════════════════════════════════════════
